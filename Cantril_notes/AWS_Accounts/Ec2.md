@@ -1,6 +1,6 @@
 ## Ec2 Basics
 
-[https://learn.cantrill.io/courses/1820301/lectures/41301620]
+
 
 ![1707151443846](image/Ec2/1707151443846.png)
 
@@ -13,6 +13,3 @@
 [https://learn.cantrill.io/courses/1820301/lectures/41301621]
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301622]
-
-
-
