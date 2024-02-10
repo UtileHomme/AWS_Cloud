@@ -12,3 +12,11 @@
 
 `ssh -i <PEM_Key_path> username@domain`
 
+## How to create customized userprofile to have unique access key and secret key for each user using the CLI
+
+`aws configure --profile dev`
+
+![1707444047443](image/AWS_Handson_commands/1707444047443.png)
+
+
+
