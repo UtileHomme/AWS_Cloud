@@ -16,9 +16,14 @@
 
 ![1707438630346](image/CloudFormation/1707438630346.png)
 
+
+![1708393312934](image/CloudFormation/1708393312934.png)
+
+
+![1708393339561](image/CloudFormation/1708393339561.png)
+
 ![1707438729440](image/CloudFormation/1707438729440.png)
 
 ## Simple Automation with CloudFormation Handson
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301627]
-
