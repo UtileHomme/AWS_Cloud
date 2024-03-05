@@ -69,7 +69,7 @@ Default VPC has CIDR value of 172.31.0.0/16
 
 [https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874484#overview]
 
-
+![1709555323887](image/IAM/1709555323887.png)
 
 
 ## Internet Gateway and Route Tables Handson
