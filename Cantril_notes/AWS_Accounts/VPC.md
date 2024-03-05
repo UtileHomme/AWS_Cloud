@@ -1,4 +1,4 @@
-## IP Addressing Primer 
+## IP Addressing Primer
 
 [https://youtu.be/g2JOHLHh4rI?si=wfHnQAAbBA3HIrfB&t=164]
 
@@ -25,6 +25,11 @@
 ## Default VPC
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301619]
+
+## Default VPC Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528538#overview]
+
 
 ![1707044214865](image/VPC/1707044214865.png)
 
@@ -58,12 +63,25 @@ Default VPC has CIDR value of 172.31.0.0/16
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301619]
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874472#overview]
+
+## Subnets Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874484#overview]
 
 
 
 
+## Internet Gateway and Route Tables Handson
 
+[https://udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874492#overview]
 
+## Bastion Host Handson
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874510#overview]
+
+## Nat Instance Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874518#overview]
 
 
