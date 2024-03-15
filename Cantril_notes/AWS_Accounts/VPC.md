@@ -30,7 +30,6 @@
 
 [https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528538#overview]
 
-
 ![1707044214865](image/VPC/1707044214865.png)
 
 **Note - We can have only 1 Default VPC per region**
@@ -71,7 +70,6 @@ Default VPC has CIDR value of 172.31.0.0/16
 
 ![1709555323887](image/IAM/1709555323887.png)
 
-
 ## Internet Gateway and Route Tables Handson
 
 [https://udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874492#overview]
@@ -84,4 +82,14 @@ Default VPC has CIDR value of 172.31.0.0/16
 
 [https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874518#overview]
 
+## Nat Gateway Handson
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874522#overview]
+
+## Security Groups and NACL Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874530#overview]
+
+## VPC Peering Handson
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874554#overview]
