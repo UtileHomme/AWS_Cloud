@@ -16,13 +16,10 @@
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301622]
 
-
-
-
 ## Auto Scaling Groups
 
-
-
 [https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/26099572?start=0#overview]
+
+Hello
 
 ![1710487712157](image/Ec2/1710487712157.png)
