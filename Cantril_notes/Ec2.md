@@ -16,12 +16,28 @@
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301622]
 
+## Ec2 How to create an instance (Handson)
 
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/26098122#overview
+
+## Security Groups Handson
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/26098138#overview
+
+## SSH Into Windows Ec2 Machine (Handson)
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528046#overview
+
+## Ec2 Instance Roles (Handson)
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/26098166#overview
+
+## Ec2 Instance Launch Types (Handson)
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/27694918#overview
 
 
 ## Auto Scaling Groups
-
-
 
 [https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/26099572?start=0#overview]
 
