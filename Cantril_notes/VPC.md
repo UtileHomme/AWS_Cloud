@@ -1,4 +1,4 @@
-## IP Addressing Primer 
+## IP Addressing Primer
 
 [https://youtu.be/g2JOHLHh4rI?si=wfHnQAAbBA3HIrfB&t=164]
 
@@ -26,11 +26,19 @@
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301619]
 
+## Default VPC Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528538#overview]
+
 ![1707044214865](image/VPC/1707044214865.png)
 
 **Note - We can have only 1 Default VPC per region**
 
 ![1707044506599](image/VPC/1707044506599.png)
+
+![1708393978121](image/VPC/1708393978121.png)
+
+![1708393995346](image/VPC/1708393995346.png)
 
 ## Custom VPCs
 
@@ -54,12 +62,34 @@ Default VPC has CIDR value of 172.31.0.0/16
 
 [https://learn.cantrill.io/courses/1820301/lectures/41301619]
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874472#overview]
 
+## Subnets Handson
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874484#overview]
 
+![1709555323887](image/IAM/1709555323887.png)
 
+## Internet Gateway and Route Tables Handson
 
+[https://udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874492#overview]
 
+## Bastion Host Handson
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874510#overview]
 
+## Nat Instance Handson
 
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874518#overview]
+
+## Nat Gateway Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874522#overview]
+
+## Security Groups and NACL Handson
+
+[https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874530#overview]
+
+## VPC Peering Handson
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/28874554#overview]
