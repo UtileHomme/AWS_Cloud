@@ -1,4 +1,4 @@
-# **AWS Interview Questions & Answers**
+# **t all that pAWS Interview Questions & Answers**
 
 1. **Q: List the components required to build Amazon VPC?**
 
@@ -435,6 +435,8 @@
     4. Storage Scaling
 
     - **Ans:** 3. Secure Hosting & 4. Storage Scaling
+
+    -- Done till here
 96. **Q: What’s the difference between instance store and EBS?**
 
     **Issue**
@@ -788,7 +790,6 @@
 
      - **Ans:** Both A and B
 
-
 ### EC2 Instance:
 
 1. **What is an EC2 instance?**
@@ -948,8 +949,6 @@
 60. **How do you configure Session Manager on an EC2 instance?**
     **Answer:** To configure Session Manager, you need to ensure that the AWS Systems Manager Agent (SSM Agent) is installed and running on the instance. You also need the necessary IAM permissions to start sessions.
 
-
-
 **1. What is AWS IAM?**
 
 - **Answer:** AWS Identity and Access Management (IAM) is a service that allows you to manage users, groups, and roles in your AWS account. It enables you to control access to AWS services and resources securely.
@@ -1029,8 +1028,6 @@
 **20. How do you troubleshoot IAM permission issues?**
     - **Answer:** Troubleshooting IAM permission issues involves checking policies, roles, and group memberships to ensure that the user has the necessary permissions. CloudTrail logs can be reviewed to identify any denied actions and diagnose the issue.
 
-
-
 #### AWS Multi-Account Architecture with Organizations:
 
 **Common Accounts we use in most of the environments.**
@@ -1106,8 +1103,6 @@ Central Networking Account, Central Logging Account and Management Account.
 28. **How does AWS Infrastructure Event Management assist in operational readiness?**
     *Answer:* AWS Infrastructure Event Management helps you plan for and respond to AWS infrastructure events. It provides personalized alerts and guidance to help you prepare for and respond to events that may impact your AWS resources.
 
-
-
 ### RDS Configuration:
 
 1. **What is Amazon RDS?**
@@ -1178,8 +1173,6 @@ Central Networking Account, Central Logging Account and Management Account.
     *Answer:* A database instance is just RDS instance, DB CLuster is combination of Writer Instance and some reader instance.
 25. **Can you encrypt an existing unencrypted Amazon RDS instance?**
     *Answer:* No, Directly we cannot enforce encryption on Existing RDS instance but, by taking a snapshot, creating a copy with encryption, and then promoting the copy.
-
-
 
 #### Securing AWS Account:
 
@@ -1396,8 +1389,6 @@ Central Networking Account, Central Logging Account and Management Account.
 
 **10. Explain how you would set up a cross-account access policy for an S3 bucket.**
     - **Answer:** I would create a bucket policy that specifies the ARN (Amazon Resource Name) of the IAM user or role from the other account and define the allowed actions and resources. This would grant the necessary cross-account access permissions.
-
-
 
 ### VPC Basics:
 
