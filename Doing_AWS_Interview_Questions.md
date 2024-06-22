@@ -1,4 +1,4 @@
-# **t all that pAWS Interview Questions & Answers**
+# **AWS Interview Questions & Answers**
 
 1. **Q: List the components required to build Amazon VPC?**
 
@@ -435,8 +435,6 @@
     4. Storage Scaling
 
     - **Ans:** 3. Secure Hosting & 4. Storage Scaling
-
-    -- Done till here
 96. **Q: What’s the difference between instance store and EBS?**
 
     **Issue**
@@ -448,7 +446,7 @@
     Some Amazon EC2 instance types come with a form of directly attached, block-device storage known as the instance store. The instance store is ideal for temporary storage, because the data stored in instance store volumes is not persistent through instance stops, terminations, or hardware failures. You can find more detailed information about the instance store at Amazon EC2 Instance Store.
 
     For data you want to retain longer-term, or if you need to encrypt the data, we recommend using EBS volumes instead. EBS volumes preserve their data through instance stops and terminations, can be easily backed up with EBS snapshots, can be removed from instances and reattached to another, and support full-volume encryption. For more detailed information about EBS volumes, see Features of Amazon EBS.
-97. **Q: BS can be attached to any running instance that is in the same Availability Zone ?**
+97. **Q: EBS can be attached to any running instance that is in the same Availability Zone ?**
 
     1. True
     2. False
@@ -544,7 +542,7 @@
      2. False
 
      - **Ans:** True
-113. **Q: VPC is also going to enhanced security**
+113. **Q: VPC is also going to enhance security**
 
      1. True
      2. False
@@ -604,7 +602,7 @@
      3. 5
      4. None the above
 
-     - **Ans:**
+     - **Ans: 10**
 124. **Q: What is the name to the additional network interfaces that can be created and attached to any Amazon EC2 instance in your VPC?**
 
      1. Elastic IP
