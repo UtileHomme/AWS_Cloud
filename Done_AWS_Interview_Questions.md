@@ -1107,7 +1107,7 @@ Central Networking Account, Central Logging Account and Management Account.
    *Answer:* Amazon RDS is a managed relational database service that makes it easier to set up, operate, and scale a relational database in the cloud.
 2. **Which database engines are supported by Amazon RDS?**
    *Answer:* Amazon RDS supports various database engines including Aurora (Mysql and Postgre SQL compatable editions), MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server.
-3. **What are the benefits of using Amazon RDS over managing your own database server?**
+3. **IMP - What are the benefits of using Amazon RDS over managing your own database server?**
    *Answer:* Benefits include automated backups, automated software patching, high availability, and ease of scalability.
 4. **What is a DB instance in Amazon RDS?**
    *Answer:* A DB instance is a database environment running in Amazon RDS, comprising the primary instance and, if enabled, one or more Read Replicas.
@@ -1227,7 +1227,7 @@ Central Networking Account, Central Logging Account and Management Account.
     *Answer:* AWS KMS allows you to create and manage encryption keys that can be used to encrypt data at rest in services like S3 and EBS, providing an additional layer of security.
 19. **What is an AWS KMS Customer Master Key (CMK)?**
     *Answer:* An AWS KMS Customer Master Key (CMK) is a logical key that represents a top-level encryption key. It can be used to encrypt and decrypt data, and it's managed by AWS KMS.
-20. **What is envelope encryption and how does AWS KMS use it?**
+20. **IMP - What is envelope encryption and how does AWS KMS use it?**
     *Answer:* Envelope encryption is a method where a data encryption key is used to encrypt data, and then the data encryption key itself is encrypted using a master key. AWS KMS uses this approach to secure data.
 21. **Can you explain the difference between AWS managed keys (AWS managed CMKs) and customer managed keys (CMKs)?**
     *Answer:* AWS managed keys are created, managed, and used by AWS services on your behalf. Customer managed keys (CMKs) are created, managed, and used by you within AWS KMS.

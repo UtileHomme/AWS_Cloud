@@ -46,7 +46,6 @@ Certainly! Here are some interview questions related to AWS, along with clickabl
 
 Feel free to review the linked documentation to deepen your understanding of each topic. Good luck with your interview!
 
-
 **Q. In which case will we use a default VPC?**
 
 The default VPC (Virtual Private Cloud) in AWS is automatically created for your AWS account in each AWS region. You might choose to use the default VPC in the following scenarios:
@@ -57,7 +56,6 @@ The default VPC (Virtual Private Cloud) in AWS is automatically created for your
 4. **Ease of Use:** If you're running basic workloads and don't require custom network architectures or advanced configurations, the default VPC is designed to be straightforward and easy to use.
 
 However, keep in mind that for production environments and more complex applications, it is often recommended to create a custom VPC tailored to your specific requirements. Custom VPCs provide more control over the network architecture, IP address ranges, and security configurations, allowing you to design a network that meets your organization's specific needs and security policies. Additionally, using a custom VPC can help prevent any unexpected dependencies on default settings.
-
 
 **Q. What is a zone file in route 53. Can you explain me how it works with an example of a domain?**
 
@@ -87,7 +85,6 @@ Let's say you have a domain name `example.com`, and you want to configure DNS se
    mail             MX     10 mail.example.com.
    mail             A      192.0.2.2
    ```
-
 
    In this example:
 
@@ -140,7 +137,6 @@ Let's say you have a group of houses (instances) in a neighborhood (subnet), and
 
 By combining security groups and NACLs, you create layers of protection for your instances and subnets, ensuring that only authorized traffic can enter or leave your network.
 
-
 **Q. Can we have multiple instances in a subnet?**
 
 Yes, absolutely! Subnets are designed to contain multiple instances (or virtual machines) within a single network segment. Think of a subnet as a neighborhood within a larger city (the VPC), where each house (instance) has its own address (IP address) and can communicate with other houses within the same neighborhood.
@@ -153,7 +149,6 @@ Here's how multiple instances can exist within a subnet:
 4. **Routing:** Subnets are connected to each other through route tables, which define how traffic should flow between them. Instances within the same subnet can communicate without needing to go through a router.
 
 So yes, you can have multiple instances in a subnet, and it's a common practice to deploy groups of related instances (such as those serving a specific application or service) within the same subnet for ease of management and communication.
-
 
 **Q. Can you explain me the difference between resource and identity policies. I am not able to visualise. Please give me examples from application point**
 
@@ -184,7 +179,6 @@ Continuing with the S3 bucket example, let's say you have an IAM user named "Ali
 
 In essence, resource policies are about controlling access to resources themselves, while identity policies are about controlling what actions specific users or roles can perform on those resources.
 
-
 **Q. What are ACLs ? Can you explain them to me using an example. Assume I am beginner**
 
 Absolutely! Let's break down Access Control Lists (ACLs) using a simple analogy.
@@ -212,7 +206,6 @@ Just like the security guard refers to the ACL to determine who can enter or lea
 
 So, NACLs are like the gatekeeper for your subnets, enforcing security rules to protect your network infrastructure in the cloud.
 
-
 **Q. What are permission boundaries. Assume above**
 
 Sure! Let's continue with our neighborhood analogy to explain permission boundaries.
@@ -237,7 +230,6 @@ Imagine your neighborhood has a property fence that surrounds each house. This f
 In AWS, permission boundaries work similarly to property fences in our neighborhood analogy. They provide a way to limit the permissions that can be attached to IAM entities (users or roles), helping organizations maintain control over their AWS resources and enforce security policies effectively.
 
 By setting permission boundaries, you can ensure that IAM entities have the appropriate level of access required for their responsibilities without granting excessive permissions, thus reducing the risk of unauthorized access and potential security breaches.
-
 
 **Q. What are the different use cases of IAM role. Can you explain it to me with examples**
 
@@ -269,7 +261,6 @@ Certainly! IAM roles in AWS are versatile and can be used in various scenarios t
 * **Example:** You need to give a contractor temporary access to upload files to an S3 bucket for a week. Instead of creating a permanent IAM user, you create an IAM role with the necessary permissions and a time-limited session duration. You provide the contractor with the role's ARN (Amazon Resource Name), and they assume the role using temporary credentials obtained through AWS Security Token Service (STS) to upload files to the S3 bucket.
 
 IAM roles provide a flexible and secure way to manage access to AWS resources, enabling you to follow the principle of least privilege and adhere to security best practices.
-
 
 **Q. What is the use of a key pair in ec2 instance creation. How is it different from security group. In which cases can I avoid creating a key pair?**
 
@@ -312,8 +303,7 @@ Here's a breakdown of controlling instance placement in dedicated hosts:
 
 Overall, controlling instance placement in dedicated hosts provides organizations with enhanced control, compliance, and performance benefits, making it a suitable option for certain use cases and workloads.
 
-
-**Q. What does the statement VPC peering doesn’t support edge to edge routing. Can you explain to me as if I am a beginner?**
+**Q. IMP - What does the statement VPC peering doesn’t support edge to edge routing. Can you explain to me as if I am a beginner?**
 
 Of course! Let's break down the statement "VPC peering doesn’t support edge to edge routing" in simpler terms:
 
@@ -328,8 +318,7 @@ Of course! Let's break down the statement "VPC peering doesn’t support edge to
 
 In summary, VPC peering enables communication between VPCs within the same AWS region, but it doesn't support routing traffic between VPCs in different regions, which is what "edge to edge routing" refers to.
 
-
-**Q. What is AWS private link endpoint. What are their use cases. What does it do? Explain me with examples and like a beginner**
+**Q. IMP - What is AWS private link endpoint. What are their use cases. What does it do? Explain me with examples and like a beginner**
 
 Alright, let's simplify AWS PrivateLink endpoints:
 
@@ -380,7 +369,6 @@ Let's say you have an application running in your VPC that needs to access an S3
 
 In summary, DNS resolution settings in VPC endpoints control how DNS queries are resolved for services accessed through the endpoint, ensuring secure, private, and efficient communication within your VPC.
 
-
 **Q. What are the uses cases of interface and gateway endpoints. Can you explain me the difference**
 
 Sure! Let's explore the use cases and differences between interface and gateway endpoints:
@@ -419,7 +407,6 @@ Let's say you have an application running in your VPC that needs to access both 
 
 In summary, interface endpoints provide broad access to AWS services within your VPC, while gateway endpoints offer targeted access to specific services with enhanced security and reduced internet traffic. Your choice between the two depends on the services you need to access and your requirements for network isolation and traffic routing.
 
-
 **Q. What are route tables? How do they help in controlling traffic? Can you give real life examples**
 
 Certainly! Let's simplify route tables and their role in controlling traffic:
@@ -450,7 +437,6 @@ Certainly! Let's simplify route tables and their role in controlling traffic:
 
 In summary, route tables are essential components of network infrastructure that help in directing and controlling traffic within a network or VPC. They enable efficient communication between network devices, ensure network segmentation, and play a crucial role in network security.
 
-
 **Q. How does it work in the AWS Context**
 
 In the AWS context, route tables function similarly to how they do in traditional networking, but they are specifically designed to manage traffic within Virtual Private Clouds (VPCs). Here's how they work in AWS:
@@ -480,7 +466,6 @@ Let's say you have a VPC with multiple subnets: public, private, and database su
 * **Database Subnet:** Similarly, the database subnet might have a route table with routes for communication with specific database servers or other resources, but not a route for internet access.
 
 In summary, route tables in AWS VPCs manage traffic routing within the virtual network, allowing you to control how traffic flows between subnets, to the internet, and to other network resources. They play a crucial role in designing and implementing the network architecture within AWS.
-
 
 **What are the difference between inline and managed policies. In which scenarios will one use either of the two. Please give me detailed real life scenarios?**
 
@@ -515,7 +500,6 @@ Certainly! Let's dive into the differences between inline and managed policies i
 
 In real-life scenarios, you'll often use a combination of both inline and managed policies to achieve the desired level of granularity, flexibility, and consistency in managing permissions within your AWS environment.
 
-
 **Q. How does versioning help in s3. What are the real life scenarios?**
 
 Versioning in Amazon S3 is a feature that allows you to keep multiple versions of an object in a bucket. Each time you overwrite or delete an object, a new version is created, which enables you to preserve, retrieve, and restore previous versions of the same object. Here's how versioning helps in S3 and some real-life scenarios:
@@ -546,8 +530,7 @@ Versioning in Amazon S3 is a feature that allows you to keep multiple versions o
 
 In summary, versioning in Amazon S3 provides data protection, recovery capabilities, and compliance features that are essential for a wide range of use cases across different industries and applications. It ensures data integrity, availability, and durability, making it a fundamental feature for managing objects in S3.
 
-
-**How to use Aurora REST aPI to call data from Aurora MySQL Database in Python. Please give me code as well**
+**Q. IMP - How to use Aurora REST API to call data from Aurora MySQL Database in Python. Please give me code as well**
 
 To use the Aurora Serverless Data API to interact with an Aurora MySQL database in Python, you can utilize the `boto3` library, which is the AWS SDK for Python. Below is an example code snippet demonstrating how to call data from an Aurora MySQL database using the Aurora Serverless Data API in Python:
 
@@ -611,7 +594,6 @@ for record in data:
     print(record)
 ```
 
-
 In the above code:
 
 * Replace `'your-cluster-arn'` with the ARN of your Aurora cluster.
@@ -629,8 +611,7 @@ pip install boto3
 
 This code demonstrates a basic example of using the Aurora Serverless Data API in Python. Depending on your specific requirements and use case, you may need to modify and extend the code accordingly.
 
-
-**Q. What does SSL termination mean. Can you explain with me an example**
+**Q. IMP - What does SSL termination mean. Can you explain with me an example**
 
 SSL termination refers to the process of decrypting SSL/TLS-encrypted traffic at the termination point of a network, typically a load balancer, proxy server, or web server, and forwarding the decrypted traffic to its destination in plaintext. This allows the destination server to process the request without needing to decrypt the traffic itself.
 
@@ -669,7 +650,6 @@ Let's say you have a web application deployed on a group of web servers behind a
    * It facilitates load balancing and traffic distribution across backend servers based on decrypted content, enabling efficient resource utilization.
 
 In summary, SSL termination is the process of decrypting SSL/TLS-encrypted traffic at a termination point, such as a load balancer, before forwarding it to its destination in plaintext. It offers various benefits, including improved performance, centralized management of SSL certificates, enhanced security monitoring, and efficient traffic distribution.
-
 
 **Q. I am planning to create APIs via AWS api gateway which will connect to customers table from AWS RDS. There will be 4 APIs for all CRUD operations. Can you guide me along with python code for doing this as part of my project**
 
@@ -725,9 +705,6 @@ return {
         connection.close()
 ```
 
-
-
-
 #### 2. Get Customer (GET):
 
 ```
@@ -772,9 +749,6 @@ try:
         connection.close()
 ```
 
-
-
-
 #### 3. Update Customer (PUT):
 
 ```
@@ -813,7 +787,6 @@ return {
         connection.close()
 ```
 
-
 #### 4. Delete Customer (DELETE):
 
 ```
@@ -848,9 +821,6 @@ return {
         connection.close()
 ```
 
-
-
-
 ### Step 4: Deploy API:
 
 Deploy the API in API Gateway to make it accessible via a public endpoint.
@@ -863,9 +833,7 @@ Make sure to replace `'your-rds-hostname'`, `'your-username'`, `'your-password'`
 
 This setup will allow you to create, read, update, and delete records from the `customers` table in your RDS database via AWS API Gateway using Lambda functions written in Python.
 
-3.5
-
-Can you guide me how to setup the lambda function and connect it with RDS
+**Q. IMP - Can you guide me how to setup the lambda function and connect it with RDS?**
 
 Sure! Here's a step-by-step guide to setting up a Lambda function and connecting it with an RDS database:
 
@@ -1576,3 +1544,365 @@ To securely manage and retrieve your AWS RDS credentials for a Lambda function w
    * Use IAM roles, API keys, or AWS Cognito to secure access to your API endpoints.
 
 By following these steps, you can create a secure Lambda-based REST API that connects to a MySQL RDS database without storing credentials in your code, leveraging AWS Secrets Manager for secure credential management.
+
+**Q. In what scenarios is storing documents in S3 and retrieving them help in a python application?**
+
+Storing documents in Amazon S3 (Simple Storage Service) and retrieving them in a Python application is useful in various scenarios. Here are some common use cases:
+
+### 1. **Web and Mobile Applications**
+
+* **User Content Storage** : Store user-generated content like images, videos, documents, and audio files. For example, a photo-sharing app can store user-uploaded photos in S3.
+* **Media Streaming** : Host video and audio files for streaming to users.
+* **File Downloads** : Provide downloadable content such as reports, eBooks, and software packages.
+
+### 2. **Backup and Restore**
+
+* **Data Backups** : Regularly back up application data, databases, and logs to S3 for disaster recovery and compliance purposes.
+* **Archive Storage** : Store infrequently accessed data cost-effectively using S3’s Glacier storage class.
+
+### 3. **Data Lakes and Big Data Analytics**
+
+* **Data Storage** : Store large datasets, including structured, semi-structured, and unstructured data, which can be processed later using AWS analytics services like Amazon Athena, AWS Glue, or Amazon Redshift Spectrum.
+* **Log Storage** : Store logs generated by applications, servers, and IoT devices for analysis and monitoring.
+
+### 4. **Content Delivery**
+
+* **Static Content Hosting** : Serve static files like HTML, CSS, JavaScript, images, and fonts for web applications.
+* **CDN Integration** : Integrate with Amazon CloudFront to distribute content globally with low latency.
+
+### 5. **Machine Learning and AI**
+
+* **Training Data** : Store large volumes of training data for machine learning models.
+* **Model Storage** : Store machine learning models and retrieve them for inference.
+
+### 6. **Collaboration and Sharing**
+
+* **Document Management** : Store documents that can be shared and collaborated on by multiple users, such as in a document management system.
+* **File Sharing** : Share files securely with other users or applications.
+
+### 7. **Static Website Hosting**
+
+* **Static Sites** : Host static websites directly from an S3 bucket, taking advantage of S3’s scalability, security, and low cost.
+
+### Example: Storing and Retrieving Files in S3 using Python
+
+Here’s a simple example of how you can store and retrieve files in S3 using the Boto3 library in Python.
+
+#### 1. **Install Boto3**
+
+```
+pip install boto3
+```
+
+#### 2. **Configure AWS Credentials**
+
+Ensure your AWS credentials are configured. You can use the AWS CLI to configure credentials:
+
+```
+aws configure
+```
+
+#### 3. **Python Code Example**
+
+```
+import boto3
+from botocore.exceptions import NoCredentialsError
+```
+
+# Configure S3 client
+
+```
+s3 = boto3.client('s3')
+```
+
+# Function to upload a file to S3
+
+```
+def upload_to_s3(file_name, bucket, object_name=None):
+    if object_name is None:
+        object_name = file_name  
+try:
+        s3.upload_file(file_name, bucket, object_name)
+        print(f"File {file_name} uploaded to {bucket}/{object_name}")
+    except NoCredentialsError:
+        print("Credentials not available")
+```
+
+
+# Function to download a file from S3
+
+```
+def download_from_s3(bucket, object_name, file_name):
+    try:
+        s3.download_file(bucket, object_name, file_name)
+        print(f"File {file_name} downloaded from {bucket}/{object_name}")
+    except NoCredentialsError:
+        print("Credentials not available")
+```
+
+# Example usage
+
+```
+bucket_name = 'your-s3-bucket-name'
+file_to_upload = 'path/to/your/file.txt'
+file_to_download = 'path/to/save/downloaded/file.txt'
+s3_object_name = 'file.txt'
+```
+
+# Upload a file
+
+```
+upload_to_s3(file_to_upload, bucket_name, s3_object_name)
+```
+
+# Download a file
+
+```
+download_from_s3(bucket_name, s3_object_name, file_to_download)
+```
+
+### Scenario-Specific Examples
+
+1. **Web and Mobile Applications:**
+   For an e-commerce application, product images can be stored in S3. When a new product is added, the image is uploaded to S3 and the URL is stored in the database. The application retrieves the image URL from the database to display it on the product page.
+2. **Backup and Restore:**
+   For a SaaS application, daily database backups can be stored in S3. If a data recovery is needed, the backup can be retrieved from S3 and restored to the database.
+3. **Big Data Analytics:**
+   For a data analytics application, raw data from various sources can be stored in S3. AWS Glue can then process and transform this data, which can be queried using Amazon Athena.
+4. **Machine Learning and AI:**
+   For a machine learning project, training datasets (e.g., large sets of images) can be stored in S3. The training script can read the data directly from S3, process it, and save the trained model back to S3.
+
+### Conclusion
+
+Using S3 to store and retrieve documents provides a scalable, durable, and cost-effective solution for managing application data. The flexibility of S3, combined with AWS services, enables a wide range of use cases, from simple file storage to complex data processing workflows.
+
+
+**Q. Is it good for scenarios where users will be downloading in a real time documents that are uploaded in S3. I also want to know the cost aspect of retrieving such document. The no of documents will easily reach 100000 eventually?**
+
+Using Amazon S3 for scenarios where users need to download documents in real-time is a common and effective solution. S3 provides high availability, scalability, and durability, making it suitable for handling a large number of files and frequent access. Here’s a detailed look at how it works and the associated costs.
+
+### Real-Time Document Downloading with S3
+
+#### Advantages:
+
+1. **Scalability** : S3 can handle a large number of documents and high traffic without performance degradation.
+2. **Durability and Availability** : S3 offers 99.999999999% durability and 99.99% availability of objects over a given year.
+3. **Global Access** : By using Amazon CloudFront (a CDN), you can distribute content globally, ensuring low latency and high transfer speeds.
+4. **Security** : S3 offers robust security features, including fine-grained access controls, encryption, and integration with AWS Identity and Access Management (IAM).
+
+### Cost Aspects
+
+Costs associated with using S3 primarily include storage costs, data transfer costs, and request costs. Here’s a breakdown:
+
+1. **Storage Costs** :
+
+* S3 Standard Storage: Typically around $0.023 per GB for the first 50 TB/month. For 100,000 documents, assuming an average size of 1 MB per document, that’s roughly 100 GB, costing approximately $2.30 per month.
+* For larger volumes, you can use different storage classes like S3 Standard-IA (Infrequent Access) or S3 Glacier for cheaper rates.
+
+1. **Request Costs** :
+
+* GET requests (download): $0.0004 per 1,000 requests.
+* PUT requests (upload): $0.005 per 1,000 requests.
+* If users download 100,000 documents, the cost would be 100,000 / 1,000 * $0.0004 = $0.04.
+
+1. **Data Transfer Costs** :
+
+* Data transfer out to the internet is charged based on the volume of data transferred. The first GB per month is free, and then it typically costs $0.09 per GB up to 10 TB per month.
+* For 100 GB (if each document is downloaded once), the cost would be 100 * $0.09 = $9.
+
+### Example Cost Calculation
+
+Assuming:
+
+* 100,000 documents, each 1 MB in size.
+* 1 download per document per month.
+* S3 Standard storage.
+
+ **Storage Cost** :
+
+* 100,000 MB = 100 GB.
+* Cost: 100 GB * $0.023 = $2.30.
+
+ **Request Cost** :
+
+* 100,000 GET requests.
+* Cost: 100,000 / 1,000 * $0.0004 = $0.04.
+
+ **Data Transfer Cost** :
+
+* 100 GB out.
+* Cost: 100 GB * $0.09 = $9.00.
+
+ **Total Monthly Cost** : $2.30 (storage) + $0.04 (requests) + $9.00 (data transfer) = $11.34.
+
+### Setting Up S3 for Real-Time Document Downloading
+
+Here’s how you can configure and use S3 for this scenario:
+
+1. **Upload Documents to S3** :
+
+* Use the AWS SDK for Python (Boto3) to upload documents.
+
+```
+import boto3s3_client = boto3.client('s3')
+bucket_name = 'your-s3-bucket-name'
+
+def upload_file(file_name, object_name=None):
+    if object_name is None:
+        object_name = file_name  
+	response = s3_client.upload_file(file_name, bucket_name, object_name)
+    return response
+```
+
+
+
+
+2. **Generate Pre-Signed URLs for Secure Downloads** :
+
+* To allow users to download documents securely, generate pre-signed URLs. These URLs grant temporary access to specific objects in your S3 bucket.
+
+```
+def generate_presigned_url(object_name, expiration=3600):
+    url = s3_client.generate_presigned_url('get_object',
+                                           Params={'Bucket': bucket_name, 'Key': object_name},
+                                           ExpiresIn=expiration)
+    return url
+```
+
+3. **Integrate with Your Python Application** :
+
+* Use these pre-signed URLs to enable users to download documents directly from your application.
+
+```
+from flask import Flask, jsonify, request
+
+app = Flask(name)
+
+@app.route('/download/string:filename', methods=['GET'])
+def download_file(filename):
+    url = generate_presigned_url(filename)
+    return jsonify({'url': url})
+
+if name == 'main':
+    app.run(debug=True)
+```
+
+### Conclusion
+
+Using S3 for real-time document storage and retrieval in your Python application is an efficient and scalable approach. It provides robust features for security, durability, and availability, making it suitable for handling a large number of documents and frequent access.
+
+ **Cost Management Tips** :
+
+* **Optimize Storage** : Use appropriate storage classes based on access patterns (e.g., Standard-IA for infrequently accessed documents).
+* **Use CloudFront** : Implement CloudFront to cache documents and reduce data transfer costs.
+* **Monitor Usage** : Regularly monitor your S3 usage and costs with AWS Cost Explorer to identify and optimize cost drivers.
+
+**Q. What is the same user is making multiple requests to the same document. Will that not increase the cost exponentially if it is hitting s3 again and again?**
+
+Yes, if the same user or multiple users repeatedly request the same document, the cost associated with S3 GET requests and data transfer will increase. To mitigate this and optimize costs, you can use Amazon CloudFront, a Content Delivery Network (CDN) service, which caches your content at edge locations worldwide. This reduces the load on your S3 bucket and decreases latency for users.
+
+### How CloudFront Reduces Costs
+
+1. **Caching** : CloudFront caches your content at edge locations. When a user requests a document, CloudFront serves it from the cache if it's available, reducing the number of GET requests to S3.
+2. **Reduced Data Transfer Costs** : Data transfer from CloudFront to the internet is often cheaper than direct data transfer from S3.
+
+### Cost Analysis with CloudFront
+
+#### Without CloudFront:
+
+* Every user request directly hits S3, incurring GET request costs and data transfer costs.
+
+#### With CloudFront:
+
+* Initial requests fetch the document from S3 and cache it at the edge location.
+* Subsequent requests for the same document are served from the cache, reducing the load on S3 and lowering costs.
+
+### Example Cost Calculation with CloudFront
+
+Assume:
+
+* 100,000 documents, each 1 MB in size.
+* 1,000,000 total requests per month (10 requests per document on average).
+* Without CloudFront, all requests hit S3.
+* With CloudFront, assume a 90% cache hit rate (only 10% of requests hit S3).
+
+#### Without CloudFront:
+
+* **Storage Cost** : 100 GB * $0.023 = $2.30.
+* **Request Cost** : 1,000,000 GET requests * $0.0004 = $400.
+* **Data Transfer Cost** : 1,000,000 * 1 MB = 1,000 GB * $0.09 = $90.
+
+ **Total Monthly Cost** : $2.30 (storage) + $400 (requests) + $90 (data transfer) = $492.30.
+
+#### With CloudFront:
+
+* **Storage Cost** : 100 GB * $0.023 = $2.30.
+* **Request Cost** : 100,000 GET requests to S3 * $0.0004 = $40.
+* **Data Transfer from S3 to CloudFront** : 100,000 * 1 MB = 100 GB * $0.09 = $9.
+* **Data Transfer from CloudFront to Users** : 900,000 * 1 MB = 900 GB, CloudFront pricing varies but let's assume $0.085 per GB for the first 10 TB = $76.50.
+
+ **Total Monthly Cost** : $2.30 (storage) + $40 (requests) + $9 (data transfer to CloudFront) + $76.50 (data transfer from CloudFront) = $127.80.
+
+### Setting Up CloudFront with S3
+
+1. **Create a CloudFront Distribution:**
+   * Go to the AWS Management Console.
+   * Navigate to CloudFront.
+   * Click "Create Distribution".
+   * Select "Web" and click "Get Started".
+   * Under "Origin Settings", set the origin domain to your S3 bucket.
+   * Configure other settings as needed and create the distribution.
+2. **Update Your Application to Use CloudFront URLs:**
+   * Replace direct S3 URLs with CloudFront URLs in your application.
+   * For example, if your S3 URL is `https://your-bucket.s3.amazonaws.com/document.pdf`, your CloudFront URL will be something like `https://d123456abcdefg.cloudfront.net/document.pdf`.
+3. **Generate Pre-Signed URLs (if required):**
+   * If you need to restrict access to certain documents, you can still generate pre-signed URLs for CloudFront.
+
+```
+import boto3
+from botocore.exceptions import NoCredentialsError
+import datetime
+```
+
+# Configure S3 and CloudFront clients
+
+```
+s3_client = boto3.client('s3')
+cloudfront_client = boto3.client('cloudfront')
+```
+
+# Function to generate CloudFront pre-signed URL
+
+```
+def generate_presigned_url(object_name, expiration=3600):
+    cloudfront_domain = 'd123456abcdefg.cloudfront.net'
+    key_pair_id = 'APKAEXAMPLE'
+    private_key_path = '/path/to/your/private/key.pem'  
+
+expires = int(datetime.datetime.now().timestamp() + expiration)  
+url = cloudfront_client.generate_presigned_url(
+        'get_object',
+        Params={
+            'Bucket': 'your-s3-bucket',
+            'Key': object_name
+        },
+        ExpiresIn=expiration
+    )  
+
+# You might need to use a different library or approach for CloudFront signed URLs
+    # depending on your setup and security requirements.
+    return url
+```
+
+
+# Example usage
+
+```
+object_name = 'document.pdf'
+url = generate_presigned_url(object_name)
+print(f"Download URL: {url}")
+```
+
+### Conclusion
+
+Using Amazon S3 in conjunction with Amazon CloudFront provides an efficient and cost-effective way to handle real-time document downloads. CloudFront reduces the number of requests and data transfer costs to S3 by caching content at edge locations, making it ideal for scenarios where documents are frequently accessed.
